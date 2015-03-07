@@ -39,8 +39,8 @@ module Artoo
         firmata.digital_write(pin, convert_level(level))
       end
 
-      def neopixel
-        firmata.neopixel_write
+      def neopixel(x, y, red, green, blue)
+        firmata.neopixel_write(x, y, red, green, blue)
       end
 
       def digital_read(pin)
