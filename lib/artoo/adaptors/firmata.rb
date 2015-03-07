@@ -39,6 +39,10 @@ module Artoo
         firmata.digital_write(pin, convert_level(level))
       end
 
+      def neopixel
+        firmata.neopixel
+      end
+
       def digital_read(pin)
         firmata.set_pin_mode(pin, ::Firmata::PinModes::INPUT)
         firmata.toggle_pin_reporting(pin)
