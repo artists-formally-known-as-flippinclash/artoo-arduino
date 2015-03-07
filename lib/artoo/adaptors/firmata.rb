@@ -40,7 +40,7 @@ module Artoo
       end
 
       def neopixel
-        firmata.neopixel
+        firmata.neopixel_write
       end
 
       def digital_read(pin)
